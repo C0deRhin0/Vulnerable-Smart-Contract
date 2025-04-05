@@ -21,6 +21,19 @@ This is an educational project designed to help developers understand and preven
 
 ## 📂 Project Structure
 
+```plaintext
+/vulnerable-bank-demo
+├── contracts
+│   ├── VulnerableContract.sol
+│   └── Attacker.sol
+├── migrations
+│   └── 1_deploy_contracts.js
+├── test
+│   └── reentrancy.test.js (optional)
+├── truffle-config.js
+└── README.md
+```
+
 ## 🔧 Setup & Installation
 
 ### Prerequisites
