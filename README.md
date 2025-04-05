@@ -5,7 +5,7 @@
 This project demonstrates a **Reentrancy Attack** on an Ethereum smart contract. It includes:
 
 - A vulnerable smart contract (`VulnerableContract.sol`) that allows deposits and withdrawals.
-- An attacker contract (`Attack.sol`) that exploits a **Reentrancy Vulnerability** in the withdrawal function.
+- An attacker contract (`Attacker.sol`) that exploits a **Reentrancy Vulnerability** in the withdrawal function.
 
 This is an educational project designed to help developers understand and prevent one of the most common smart contract vulnerabilities.
 
@@ -61,13 +61,13 @@ This is an educational project designed to help developers understand and preven
    
 2. **Get deployed instances:**
    ```bash
-   let bank = await VulnerableBank.deployed();
-   let attacker = await Attack.deployed();
+   let bank = await VulnerableContract.deployed();
+   let attacker = await Attacker.deployed();
    ```
    
 3. **Fund the attacker and initiate attack:**
    ```bash
-   await attacker.attack({ from: accounts[1], value: web3.utils.toWei("1", "ether") });
+   await attack.attack({ from: accounts[1], value: web3.utils.toWei("1", "ether") });
    ```
    
 4. **Check balances before and after:**
