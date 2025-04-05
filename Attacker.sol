@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 
-import "./VulnerableBank.sol";
+import "./VulnerableContract.sol";
 
 contract Attack {
     VulnerableBank public vulnerableBank;
