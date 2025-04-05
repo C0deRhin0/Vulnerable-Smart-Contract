@@ -4,7 +4,7 @@
 
 This project demonstrates a **Reentrancy Attack** on an Ethereum smart contract. It includes:
 
-- A vulnerable smart contract (`VulnerableBank.sol`) that allows deposits and withdrawals.
+- A vulnerable smart contract (`VulnerableContract.sol`) that allows deposits and withdrawals.
 - An attacker contract (`Attack.sol`) that exploits a **Reentrancy Vulnerability** in the withdrawal function.
 
 This is an educational project designed to help developers understand and prevent one of the most common smart contract vulnerabilities.
